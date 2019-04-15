@@ -4,11 +4,11 @@ title: 37 lý do mạng neuron nhân tạo không hoạt động
 tags : [machine learning]
 ---
 
-<!-- <div class="block">
+<div class="block">
 	<center>
-		<img src="{{ site.baseurl }}/img/tutheader_spatial.png" alt="Img">
+		<img src="{{ site.baseurl }}/img/nnsheader.png" alt="Img">
 	</center>
-</div>  -->
+</div> 
 
 Bài viết này được dịch từ một bài trên medium.
 
