@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 37 lý do mạng neuron nhân tạo không hoạt động
+title: Hiểu về Bias và Variance
 tags : [math]
 ---
 
