@@ -9,7 +9,7 @@ tags : [math]
 Trong tiếng Việt Bias được hiểu là sai số hệ thống rời, Variance là phương sai.
 
 Hiểu được hai khái niệm Bias, Variance và những nguyên nhân gây mất cân bằng Bias, Variance có thể giúp ta nâng cao độ tin cậy của mô 
-hình. Bias và Variance thường được định nghĩa trong ba ngữ cảnh: Về mặt khái niệm, đồ họa và toán học.
+hình. Bias và Variance thường được định nghĩa trong ba ngữ cảnh: Về mặt khái niệm, hiển thị và toán học.
 
 #### 1.1. Định nghĩa về mặt khái niệm
 
@@ -17,4 +17,6 @@ hình. Bias và Variance thường được định nghĩa trong ba ngữ cảnh
   
   * __Lỗi do Variance__: Phương sai chính là mức độ biến thiên của kết quả dự đoán từ mô hình. Phương sai lớn thường làm cho một mô hình đưa ra các kết quả dự đoán nằm trong một giải phân bố rộng. Quay lại với ví dụ ở phần __Bias__, bạn có thể lặp lại quá trình xây dựng mô hình nhiều lần. Variance là mức độ dự đoán cho một điểm nhất định khác nhau giữa các lần thực hiện khác nhau của mô hình.
   
-#### 1.2. 
+#### 1.2. Định nghĩa về mặt hiển thị
+
+Chúng ta có thể thể hiện mối quan hệ giữa Bias, Variance và giá trị dự đoán với đồ thị dạng bia như Hình 1 với tâm của bia tương ứng là giá trị dự đoán tốt nhất so với thực tế, giảm dần ra phía ngoài bia. 
