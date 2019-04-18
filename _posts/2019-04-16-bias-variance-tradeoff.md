@@ -23,9 +23,10 @@ Chúng ta có thể thể hiện mối quan hệ giữa Bias, Variance và giá 
 
 Có bốn trường hợp có thể xảy ra tương ứng với bias, variance cao và thấp.
 
-<!-- <div style="text-align:center" markdown="1"> -->
-  <img src="/img/bias_variance/bulls-eye.png" alt="drawing" width="218" height="225"/>
+![a|437x450,50%](/img/bias_variance/bulls-eye.png)
+<div style="text-align:center" markdown="1">
+<!--   <img src="/img/bias_variance/bulls-eye.png" alt="drawing" height="225" width="218" /> -->
   <div class="caption">
    Hình 1: Ảnh hưởng của Bias và Variance lên giá trị dự đoán.
   </div>
-<!-- </div> -->
+</div>
