@@ -23,12 +23,10 @@ Chúng ta có thể thể hiện mối quan hệ giữa Bias, Variance và giá 
 
 Có bốn trường hợp có thể xảy ra tương ứng với bias, variance cao và thấp.
 
-<div style="text-align:center" markdown="1">
 
-![bulls-eye diagram](/img/bias_variance/bulls-eye.png "Ảnh hưởng của bias và variance lên giá trị dự đoán.")
 
-</div>
 
+<div style="text-align:center">
 <div class="content-node image"><div class="image-content">    
     <table class="snug">
         <tbody><tr>
@@ -65,4 +63,5 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
     </tbody></table>
 </div><div class="caption">    Graphical illustration of bias and variance.
 </div></div>
+ </div>
 
