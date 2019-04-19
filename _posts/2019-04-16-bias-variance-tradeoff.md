@@ -6,12 +6,12 @@ tags : [math]
 ---
 
 <!-- TOC -->
- ### <a href="#-gioi-thieu-ve-bias-variance"> 1. Giới thiệu về Bias và Variance</a> 
-<!-- [1. Giới thiệu về Bias và Variance](#-gioi-thieu-ve-bias-variance)
-    - [1.1. Định nghĩa về mặt khái niệm](#-dinh-nghia-ve-khai-niem)
-    - [1.2. Định nghĩa về mặt hiển thị](#-dinh-nghia-ve-hien-thi)
-    - [1.3. Định nghĩa về mặt toán học](#-dinh-nghia-ve-toan-hoc)
-- [2. Ví dụ minh họa]
+### <a href="#-gioi-thieu-ve-bias-variance"> 1. Giới thiệu về Bias và Variance</a> 
+#### <a href="#-dinh-nghia-ve-khai-niem"> 1.1. Định nghĩa về mặt khái niệm</a>
+#### <a href="#-dinh-nghia-ve-hien-thi"> 1.2. Định nghĩa về mặt hiển thị</a>
+#### <a href="#-dinh-nghia-ve-toan-hoc"> 1.3. Định nghĩa về mặt toán học</a>
+### <a href="#-vi-du-minh-hoa"> 2. Ví dụ minh họa</a>
+### <a href="#-ung-dung"> 3. Ứng dụng</a> 
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -55,9 +55,13 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 Nếu chúng ta ký hiệu các giá trị dự đoán của một bài toán là \\(Y\\) và các biến là \\(X\\)
 
-
+<a name="-vi-du-minh-hoa">
 
 ### 2. Ví dụ minh họa
+
+<a name="-ung-dung">
+
+### 3. Ứng dụng
 
 
 
