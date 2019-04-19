@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hiểu về Bias và Variance
+mathjax: true
 tags : [math]
 ---
 
@@ -9,7 +10,7 @@ tags : [math]
     - [1.1. Định nghĩa về mặt khái niệm](#-dinh-nghia-ve-khai-niem)
     - [1.2. Định nghĩa về mặt hiển thị](#-dinh-nghia-ve-hien-thi)
     - [1.3. Định nghĩa về mặt toán học](#-dinh-nghia-ve-toan-hoc)
-- [2. 
+- [2. Các 
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
