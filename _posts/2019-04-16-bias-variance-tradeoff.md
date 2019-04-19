@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiểu về Bias và Variance
+title: Hiểu về Bias - Variance Tradeoff
 mathjax: true
 tags : [math]
 ---
@@ -54,13 +54,23 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 #### 1.3. Định nghĩa về mặt toán học
 
-Hãy tưởng tượng rằng chúng ta đang giải một bài toán có các giá trị dự đoán (output) là \\(Y\\) và các biến (input) là \\(X\\), giả sử mối quan hệ giữa đầu vào và đầu ra của bài toán là \\(Y = f(X) + \epsilon\\) với \\(\epsilon\\) là tập hợp các giá trị lỗi có phân phối chuẩn, \\(\epsilon \sim \mathcal{N}(0,\sigma_\epsilon)\\).
+Hãy tưởng tượng rằng chúng ta đang giải một bài toán có các giá trị dự đoán (output) là \\(Y\\) và các biến (input) là \\(X\\), giả sử mối quan hệ giữa đầu vào và đầu ra của bài toán là \\(Y = f(X) + \epsilon\\) với \\(\epsilon\\) là tập hợp sai số (error) có phân phối chuẩn, \\(\epsilon \sim \mathcal{N}(0,\sigma_\epsilon)\\).
 
-Theo đó, bằng phương pháp như _Hồi quy tuyến tính_ hay một số phương pháp khác, ta xây dựng được hàm \\(\hat{f}(X)\\) của \\(f(X)\\). Trong trường hợp này, bình phương lỗi dự kiến tại điểm \\(\mathbf{x}\\) là:
+Theo đó, bằng phương pháp như _Hồi quy tuyến tính_ hay một số phương pháp khác, ta xây dựng được hàm \\(\hat{f}(X)\\) của \\(f(X)\\). Trong trường hợp này, bình phương sai số dự kiến tại điểm \\(\mathbf{x}\\) là:
 
 <div style="text-align:center" markdown="1">
 \\(Err(x) = E\left[(Y-\hat{f}(x))^2\right]\\)
 </div>
+
+Giá trị sai số này được thể hiện dưới dạng __Bias__ và __Variance__ như sau:
+
+<div style="text-align:center" markdown="1">
+\\(Err(x) = \left(E[\hat{f}(x)]-f(x)\right)^2 + E\left[\left(\hat{f}(x)-E[\hat{f}(x)]\right)^2\right] +\sigma_e^2\\)
+
+\\(Err(x) = \mathrm{Bias}^2 + \mathrm{Variance} + \mathrm{Irreducible\ Error}\\)
+</div>
+
+Giá trị \\(\mathrm{Irreducible\ Error\\) cơ bản là sẽ không thể làm giảm được bằng mọi phương pháp. Mục tiêu của chúng ta là thay đổi mô hình để có thể giảm được cả Bias và Variance về 0. Tuy nhiên, trong thực tế khó có thể làm cho mô hình đạt được trạng thái hoàn hảo như vậy, dẫn đến việc chúng ta phải lựa chọn giữa tối thiểu bias hoặc tối thiểu variance, hoặc chính là cân bằng hai đại lượng này. Đó chính là Bias-Variance Tradeoff.
 
 <a name="-vi-du-minh-hoa">
 
