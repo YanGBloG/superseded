@@ -4,12 +4,24 @@ title: Hiểu về Bias và Variance
 tags : [math]
 ---
 
-### 1. Bias và Variance
+<!-- TOC -->
+- [1. Giới thiệu về Bias và Variance](#-gioi-thieu-ve-bias-variance)
+    - [1.1. Định nghĩa về mặt khái niệm](#-dinh-nghia-ve-khai-niem)
+    - [1.2. Định nghĩa về mặt hiển thị](#-dinh-nghia-ve-hien-thi)
+    - [1.3. Định nghĩa về mặt toán học](#-dinh-nghia-ve-toan-hoc)
+- [2. 
+<!-- End TOC -->
+
+<a name="-gioi-thieu-ve-bias-variance"></a>
+
+### 1. Giới thiệu về Bias và Variance
 
 Trong tiếng Việt Bias được hiểu là sai số hệ thống rời, Variance là phương sai.
 
 Hiểu được hai khái niệm Bias, Variance và những nguyên nhân gây mất cân bằng Bias, Variance có thể giúp ta nâng cao độ tin cậy của mô 
 hình. Bias và Variance thường được định nghĩa trong ba ngữ cảnh: Về mặt khái niệm, hiển thị và toán học.
+
+<a name="-dinh-nghia-ve-khai-niem"></a>
 
 #### 1.1. Định nghĩa về mặt khái niệm
 
