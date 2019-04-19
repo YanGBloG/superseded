@@ -35,3 +35,12 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 #### 1.3. Định nghĩa về mặt toán học
 
+Nếu chúng ta ký hiệu các giá trị dự đoán của một bài toán là \(Y^2\)
+
+
+
+
+
+
+
+
