@@ -10,6 +10,14 @@ tags : [machine learning]
 	</center>
 </div> 
 
+### Nội dung bài viết
+<!-- TOC -->
+### <a href="#-cac-van-de-ve-tap-du-lieu"> I. Các vấn đề về tập dữ liệu</a>
+### <a href="#-cac-van-de-ve-tang-cuong"> II. Các vấn đề về chuẩn hóa và tăng cường dữ liệu</a>
+### <a href="#-cac-van-de-ve-trien-khai"> III. Các vấn đề về triển khai</a>
+### <a href="#-cac-van-de-ve-huan-luyen"> IV. Các vấn đề về huấn luyện</a>
+<!-- END TOC -->
+
 Bài viết này được dịch từ một bài trên medium.
 
 Sau khi bạn huấn luyện một mô hình trong một thời gian dài, đồ thị thể hiện mất mát trên cả tập huấn luyện và tập thử trông rất tuyệt vời, 
@@ -21,10 +29,12 @@ như mong muốn.
 
 Các vấn đề này được tác giả chia làm bốn nhóm chính bao gồm:
 
-  - Các vấn đề về tập dữ liệu,
-  - Các vấn đề về chuẩn hóa và tăng cường dữ liệu (Normalization and Augmentation),
-  - Các vấn đề về triển khai,
-  - Các vấn đề về huấn luyện.
+	  - Các vấn đề về tập dữ liệu,
+	  - Các vấn đề về chuẩn hóa và tăng cường dữ liệu (Normalization and Augmentation),
+	  - Các vấn đề về triển khai,
+	  - Các vấn đề về huấn luyện.
+  
+<a href="-cac-van-de-ve-tap-du-lieu">
   
 ### I. Các vấn đề về tập dữ liệu:
 
@@ -83,7 +93,9 @@ Khi kích thước tập con quá lớn sẽ làm giảm tính tổng quát hóa
 
 Ngoài ra, có một cách khác để tránh được một số rắc rối đã nêu, đó là sử dụng những bộ dữ liệu chuẩn cho những mô hình mới trước khi sử dụng dữ liệu của bạn.
 
-### II. Các vấn đề về chuẩn hóa và tăng cường dữ liệu
+<a href="-cac-van-de-ve-tang-cuong">
+
+### II. Các vấn đề về chuẩn hóa và tăng cường dữ liệu:
 
 ##### 12. Thuộc tính không được chuẩn hóa
 
@@ -103,7 +115,9 @@ Nếu bạn sử dụng các mô hình pretrained phải chắc chắn được 
 
 Đồng thời kiểm tra quá trình tiền xử lý trên các tập con.
 
-### III. Các vấn đề về triển khai
+<a href="-cac-van-de-ve-trien-khai">
+
+### III. Các vấn đề về triển khai:
 
 ##### 16. Phương pháp giải quyết vấn đề quá phức tạp
 
@@ -147,7 +161,9 @@ Kích thước mô hình không đủ lớn đối với vấn đề bạn đang
 
 Nếu bạn triển khai thuật toán gradient descent cho mo hình của mình, cần phải chắn chắn được thuật toán gradient hoạt động một cách trơ tru (Tham khảo [1](http://ufldl.stanford.edu/tutorial/supervised/DebuggingGradientChecking/), [2](http://cs231n.github.io/neural-networks-3/#gradcheck), [3](https://www.coursera.org/learn/machine-learning/lecture/Y3s6r/gradient-checking)).
 
-### IV. Các vấn đề về huấn luyện
+<a href="-cac-van-de-ve-huan-luyen">
+
+### IV. Các vấn đề về huấn luyện:
 
 ##### 27. Bài toán cần xử lý có tập dữ liệu quá nhỏ
 
