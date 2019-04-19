@@ -6,14 +6,15 @@ tags : [math]
 ---
 
 <!-- TOC -->
-- [1. Giới thiệu về Bias và Variance](#-gioi-thieu-ve-bias-variance)
+### <a href="#-gioi-thieu-ve-bias-variance"> 1. Giới thiệu về Bias và Variance</a>
+<!-- [1. Giới thiệu về Bias và Variance](#-gioi-thieu-ve-bias-variance)
     - [1.1. Định nghĩa về mặt khái niệm](#-dinh-nghia-ve-khai-niem)
     - [1.2. Định nghĩa về mặt hiển thị](#-dinh-nghia-ve-hien-thi)
     - [1.3. Định nghĩa về mặt toán học](#-dinh-nghia-ve-toan-hoc)
-- [2. Các 
+- [2. Ví dụ minh họa]
 <!-- End TOC -->
 
-<a name="-gioi-thieu-ve-bias-variance"></a>
+<a name="#-gioi-thieu-ve-bias-variance"></a>
 
 ### 1. Giới thiệu về Bias và Variance
 
@@ -52,7 +53,7 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 #### 1.3. Định nghĩa về mặt toán học
 
-Nếu chúng ta ký hiệu các giá trị dự đoán của một bài toán là \\(Y^2\\)
+Nếu chúng ta ký hiệu các giá trị dự đoán của một bài toán là \\(Y\\) và các biến là \\(X\\)
 
 
 
