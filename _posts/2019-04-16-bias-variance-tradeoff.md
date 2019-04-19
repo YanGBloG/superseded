@@ -5,6 +5,7 @@ mathjax: true
 tags : [math]
 ---
 
+### Nội dung bài viết
 <!-- TOC -->
 ### <a href="#-gioi-thieu-ve-bias-variance"> 1. Giới thiệu về Bias và Variance</a> 
 #### <a href="#-dinh-nghia-ve-khai-niem"> 1.1. Định nghĩa về mặt khái niệm</a>
@@ -53,7 +54,9 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 #### 1.3. Định nghĩa về mặt toán học
 
-Nếu chúng ta ký hiệu các giá trị dự đoán của một bài toán là \\(Y\\) và các biến là \\(X\\)
+Hãy tưởng tượng rằng chúng ta đang giải một bài toán có các giá trị dự đoán (output) là \\(Y\\) và các biến (input) là \\(X\\), giả sử mối quan hệ giữa đầu vào và đầu ra của bài toán là \\(Y = f(X) + \epsilon\\) với \\(\epsilon\\) là tập hợp các giá trị lỗi có phân phối chuẩn (\\\epsilon \sim \mathcal{N}(0,\sigma_\epsilon)\\)).
+
+
 
 <a name="-vi-du-minh-hoa">
 
