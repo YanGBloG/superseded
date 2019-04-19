@@ -54,9 +54,13 @@ Có bốn trường hợp có thể xảy ra tương ứng với bias, variance 
 
 #### 1.3. Định nghĩa về mặt toán học
 
-Hãy tưởng tượng rằng chúng ta đang giải một bài toán có các giá trị dự đoán (output) là \\(Y\\) và các biến (input) là \\(X\\), giả sử mối quan hệ giữa đầu vào và đầu ra của bài toán là \\(Y = f(X) + \epsilon\\) với \\(\epsilon\\) là tập hợp các giá trị lỗi có phân phối chuẩn (\\\epsilon \sim \mathcal{N}(0,\sigma_\epsilon)\\)).
+Hãy tưởng tượng rằng chúng ta đang giải một bài toán có các giá trị dự đoán (output) là \\(Y\\) và các biến (input) là \\(X\\), giả sử mối quan hệ giữa đầu vào và đầu ra của bài toán là \\(Y = f(X) + \epsilon\\) với \\(\epsilon\\) là tập hợp các giá trị lỗi có phân phối chuẩn, \\(\epsilon \sim \mathcal{N}(0,\sigma_\epsilon)\\).
 
+Theo đó, bằng phương pháp như _Hồi quy tuyến tính_ hay một số phương pháp khác, ta xây dựng được hàm \\(\hat{f}(X)\\) của \\(f(X)\\). Trong trường hợp này, bình phương lỗi dự kiến tại điểm \\(\mathbf{x}\\) là:
 
+<div style="text-align:center" markdown="1">
+\\(Err(x) = E\left[(Y-\hat{f}(x))^2\right]\\)
+</div>
 
 <a name="-vi-du-minh-hoa">
 
