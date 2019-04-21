@@ -81,13 +81,13 @@ Chúng ta cùng một ví dụ đơn giản, thực hiện xây dựng một mô
 Giả sử sau khi thực hiện một cuộc khảo sát bằng điện thoại, ta thu được các kết quả bầu chọn như sau:
 
 <div style="text-align:center">
-<table align="center" cellspacing="4" cellpadding="4" border="1" >
+<table align="center">
 <thead>
 <tr>
-<th>  Đảng Cộng Hòa  </th>
-<th>  Đảng Dân Chủ  </th>
-<th>  Không phản hồi  </th>
-<th>  Tổng cộng  </th>
+<th>&nbsp;&nbsp;Đảng Cộng Hòa&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;Đảng Dân Chủ&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;Không phản hồi&nbsp;&nbsp;</th>
+<th>&nbsp;&nbsp;Tổng cộng&nbsp;&nbsp;</th>
 </tr>
 </thead>
 <tbody>
