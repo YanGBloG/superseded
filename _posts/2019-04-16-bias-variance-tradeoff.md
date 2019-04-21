@@ -76,6 +76,33 @@ Giá trị \\(\mathrm{Irreducible\ Error}\\) cơ bản là sẽ không thể là
 
 ### 2. Ví dụ minh họa
 
+Chúng ta cùng một ví dụ đơn giản, thực hiện xây dựng một mô hình dự đoán tỉ số phần trăm số người sẽ bầu chọn cho Đảng Cộng Hòa trong lần tổng tuyển cử tiếp theo.
+
+Giả sử sau khi thực hiện một cuộc khảo sát ta thu được các kết quả bầu chọn như sau:
+
+<div style="text-align:center" markdown="1">
+    <table>
+        <thead>
+            <tr>
+                <th>Đảng Cộng Hòa</th>
+                <th>Đảng Dân Chủ</th>
+                <th>Không phản hồi</th>
+                <th>Tổng cộng</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>13</td>
+                <td>16</td>
+                <td>21</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
 <a name="-ung-dung">
 
 ### 3. Ứng dụng
