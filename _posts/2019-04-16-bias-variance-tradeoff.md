@@ -84,10 +84,10 @@ Giả sử sau khi thực hiện một cuộc khảo sát bằng điện thoại
 <table align="center" cellspacing="4" cellpadding="4" border="1" >
 <thead>
 <tr>
-<th>Đảng Cộng Hòa</th>
-<th>Đảng Dân Chủ</th>
-<th>Không phản hồi</th>
-<th>Tổng cộng</th>
+<th>  Đảng Cộng Hòa  </th>
+<th>  Đảng Dân Chủ  </th>
+<th>  Không phản hồi  </th>
+<th>  Tổng cộng  </th>
 </tr>
 </thead>
 <tbody>
