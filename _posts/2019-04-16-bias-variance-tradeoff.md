@@ -78,28 +78,32 @@ Giá trị \\(\mathrm{Irreducible\ Error}\\) cơ bản là sẽ không thể là
 
 Chúng ta cùng một ví dụ đơn giản, thực hiện xây dựng một mô hình dự đoán tỉ số phần trăm số người sẽ bầu chọn cho Đảng Cộng Hòa trong lần tổng tuyển cử tiếp theo.
 
-Giả sử sau khi thực hiện một cuộc khảo sát ta thu được các kết quả bầu chọn như sau:
+Giả sử sau khi thực hiện một cuộc khảo sát bằng điện thoại, ta thu được các kết quả bầu chọn như sau:
 
-<div style="text-align:center" markdown="1">
-    <table>
-        <thead>
-            <tr>
-                <th>Đảng Cộng Hòa</th>
-                <th>Đảng Dân Chủ</th>
-                <th>Không phản hồi</th>
-                <th>Tổng cộng</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>13</td>
-                <td>16</td>
-                <td>21</td>
-                <td>50</td>
-            </tr>
-        </tbody>
-    </table>
+<div style="text-align:center">
+<table>
+<thead>
+<tr>
+<th>Đảng Cộng Hòa</th>
+<th>Đảng Dân Chủ</th>
+<th>Không phản hồi</th>
+<th>Tổng cộng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13</td>
+<td>16</td>
+<td>21</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
 </div>
+
+Tỉ lệ số người bầu chọn cho Đảng Cộng Hòa vào khoảng 13/(16 + 13) = 44.8 %. Ta đưa ra dự đoán rằng Đảng Dân Chủ sẽ chiến thắng cuộc tuyển cử với khoảng 10 phiếu. Tuy nhiên, khi cuộc tuyển cử thực sự diễn ra Đảng Cộng Hòa đã chiến thắng. Điều đó phản ánh khả năng dự đoán không tốt của mô hình nhưng tại sao lại xảy ra vấn đề này, điều gì khiến mô hình không hoạt động đúng như mong muốn của chúng ta ?
+
+Thực ra có rất nhiều nguyên nhân dẫn đến vấn đề này, một vài nguyên nhân tôi cũng đã đề cập ở bài viết trước. Ở đây, tập dữ liệu chính là nguyên nhân chính. Chúng ta chỉ thực hiện khảo sát bằng điện thoại, có nhiều người không phản hồi khảo sát và dữ liệu khảo sát thực sự quá ít. Đồng thời đó cũng là những nguyên nhân dẫn đến bias và variance cao.
 
 
 
