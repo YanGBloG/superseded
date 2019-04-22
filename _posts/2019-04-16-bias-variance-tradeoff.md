@@ -36,7 +36,7 @@ hình. Bias và Variance thường được định nghĩa trong ba ngữ cảnh
 
 #### 1.2. Định nghĩa về mặt hiển thị
 
-Chúng ta có thể thể hiện mối quan hệ giữa Bias, Variance và giá trị dự đoán với đồ thị dạng bia như Hình 1 với tâm của bia tương ứng là giá trị dự đoán tốt nhất so với thực tế, giảm dần ra phía ngoài bia. Tiếp tục giả sử chúng ta có thể thực hiện xây dựng nhiều mô hình cho cùng tập dữ liệu. Đôi khi ta nhận được một kết quả dự đoán tốt, giá trị dự đoán phân bố tập trung ở trung tâm của bia, trong khi các mô hình khác đem lại kết quả xấu hơn, giá trị dự đoán phân bố ngoài rìa của bia.
+Chúng ta có thể thể hiện mối quan hệ giữa Bias, Variance và giá trị dự đoán với đồ thị dạng bia (bulls-eye diagram) như Hình 1 với tâm của bia tương ứng là giá trị dự đoán tốt nhất so với thực tế, giảm dần ra phía ngoài bia. Tiếp tục giả sử chúng ta có thể thực hiện xây dựng nhiều mô hình cho cùng tập dữ liệu. Đôi khi ta nhận được một kết quả dự đoán tốt, giá trị dự đoán phân bố tập trung ở trung tâm của bia, trong khi các mô hình khác đem lại kết quả xấu hơn, giá trị dự đoán phân bố ngoài rìa của bia.
 
 Có bốn trường hợp có thể xảy ra tương ứng với bias, variance cao và thấp.
 
@@ -105,13 +105,17 @@ Tỉ lệ số người bầu chọn cho Đảng Cộng Hòa vào khoảng 13/(1
 
 Thực ra có rất nhiều nguyên nhân dẫn đến vấn đề này, một vài nguyên nhân tôi cũng đã đề cập ở bài viết trước. Ở đây, tập dữ liệu chính là nguyên nhân chính. Chúng ta chỉ thực hiện khảo sát bằng điện thoại, có nhiều người không phản hồi khảo sát và dữ liệu khảo sát thực sự quá ít. Đồng thời đó cũng là những nguyên nhân dẫn đến bias và variance cao.
 
+Cụ thể như thực hiện khảo sát qua điện thoại dễ dẫn đến bias cao vì chỉ thực hiện trên nhóm người sử dụng điện thoại. Không tập trung vào các thành phần không phản hồi cũng là một nguyên nhân dẫn đến bias cao. Kết quả dự đoán được thể hiện trên bulls-eye diagram có xu hương dịch ra xa tâm hơn, tuy nhiên điều này không làm tăng mức độ phân tán của kết quả dự đoán.
 
+Mặt khác, số lượng khảo sát quá ít dễ dẫn đến variance cao. Nếu có thể tăng số lượng khảo sát lên sẽ tăng mức độ phù hợp của mô hình, mặc dù chưa hẳn sẽ làm kết quả dự đoán chính xác hơn do bias cao nhưng variance của kết quả dự đoán sẽ giảm. Trên bulls-eye diagram, kết quả dự đoán có mức độ phân tán cao, tăng kích thước tập dữ liệu sẽ làm giảm độ phân tán nhưng có thể kết quả vẫn lệch xa tâm của đồ thị.
+
+Thực tế thì người làm mô hình không nên chỉ tập trung vào việc giảm một trong hai giá trị bias và variance, thay vào đó, hãy cố gắng giảm tối đa tổng sai số bằng cách cân bằng bias và variance.
 
 <a name="-ung-dung">
 
 ### 3. Ứng dụng
 
-
+Hãy cùng đi vào một ứng dụng thực tế hơn.
 
 
 
