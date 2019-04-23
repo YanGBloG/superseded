@@ -12,7 +12,8 @@ tags : [math]
 #### <a href="#-dinh-nghia-ve-hien-thi"> 1.2. Định nghĩa về mặt hiển thị</a>
 #### <a href="#-dinh-nghia-ve-toan-hoc"> 1.3. Định nghĩa về mặt toán học</a>
 ### <a href="#-vi-du-minh-hoa"> 2. Ví dụ minh họa</a>
-### <a href="#-ung-dung"> 3. Ứng dụng</a> 
+### <a href="#-ung-dung"> 3. Ứng dụng</a>
+#### <a href="#-k-nearest-neighbor"> 3.1. Thuật toán _k_ - Nearest Neighbor</a> 
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -119,6 +120,12 @@ Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập
 
 <center><img src="/img/bias_variance/registration.png" alt="img" style="width: 651px;"/></center>
 <center><p>Hình 2: Đăng kí cử tri (Tôn giáo (trục y) vs độ giàu có (trục x)).</p></center>
+
+<a name="-k-nearest-neighbor">
+
+#### 3.1. Thuật toán _k_ - Nearest Neighbor
+
+Có khá nhiều cách để thực hiện bài toán này, đối với những bài toán phân loại nhị phân (binary classification) mô hình hồi quy hậu cần  (một cách rất không hợp lý), logistic regressions thường xuyên được xử dụng. Tuy nhiên, đối với bài toán này một kĩ thuật khác sẽ được sử dụng, đó là _k_ - Nearest Neighbor, _k_-nn. Về thuật toán này tôi đã có một bài viết về nó nên sẽ không nhắc lại nhiều.
 
 
 
