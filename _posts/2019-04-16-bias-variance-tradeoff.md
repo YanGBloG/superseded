@@ -117,8 +117,7 @@ Thực tế thì người làm mô hình không nên chỉ tập trung vào vi�
 
 Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập dữ liệu bao gồm: Người đăng ký, mức độ giàu có và mức độ tôn giáo của người đăng kí trở thành cử tri, dữ liệu được thể hiện trong đồ thị Hình 2. Trục \\(x\\) thể hiện mức độ giàu có, trục \\(y\\) thể hiện mức độ tôn giáo của cử tri, màu đỏ là những của tri thuộc Đảng Cộng Hòa, màu xanh là những cử tri thuộc Đảng Dân Chủ. Chúng ta sẽ dự đoán cử tri thông các đặc tính là mức độ giàu có và tôn giáo của mỗi người.
 
-
-
+<center><img src="/img/bias_variance/registration.png" alt="img" style="width: 651px;"/></center>
 <center><p>Hình 2: Đăng kí cử tri (Tôn giáo (trục y) vs độ giàu có (trục x)).</p></center>
 
 
