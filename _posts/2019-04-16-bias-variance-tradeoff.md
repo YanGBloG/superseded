@@ -121,7 +121,7 @@ Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập
     <table class="snug" align="center">
         <tbody>
         	<tr>
-        		<th class="r90">Religiousness</th>
+        		<th class="r90">Tôn giáo</th>
         		<td>
         			<div id="chart_rawdata_knn" class="knn_chart">
         				<svg width="600" height="400" class="RdBu">
@@ -331,7 +331,7 @@ Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập
 			</tr>
         	<tr>
         		<th></th>
-        		<th>Wealth</th>
+			\center><th>Giàu có</th></center>
         	</tr>
     	</tbody>
 	</table>  
