@@ -125,7 +125,9 @@ Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập
 
 #### 3.1. Thuật toán _k_ - Nearest Neighbor
 
-Có khá nhiều cách để thực hiện bài toán này, đối với những bài toán phân loại nhị phân (binary classification) mô hình hồi quy hậu cần  (một cách rất không hợp lý), logistic regressions thường xuyên được xử dụng. Tuy nhiên, đối với bài toán này một kĩ thuật khác sẽ được sử dụng, đó là _k_ - Nearest Neighbor, _k_-nn. Về thuật toán này tôi đã có một bài viết về nó nên sẽ không nhắc lại nhiều.
+Có khá nhiều cách để thực hiện bài toán này, đối với những bài toán phân loại nhị phân (binary classification) mô hình hồi quy hậu cần  (một cách rất không hợp lý), logistic regressions thường xuyên được xử dụng. Tuy nhiên, đối với bài toán này một kĩ thuật khác sẽ được sử dụng, đó là _k_ - Nearest Neighbor, _k_-NN. Về thuật toán này tôi đã có một bài viết về nó nên sẽ không nhắc lại nhiều.
+
+Trong _k_-NN, một voter (người đăng ký trở thành cử tri) được xác định bằng cách xác định _k_ voters gần nhất với voter mục tiêu. Nếu các voters gần nhất thuộc Đảng Dân Chủ (dựa trên tôn giáo và tiền bạc) thì voter mục tiêu cũng thuộc Đảng Dân Chủ.
 
 
 
