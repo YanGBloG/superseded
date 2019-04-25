@@ -13,7 +13,8 @@ tags : [math]
 #### <a href="#-dinh-nghia-ve-toan-hoc"> 1.3. Định nghĩa về mặt toán học</a>
 ### <a href="#-vi-du-minh-hoa"> 2. Ví dụ minh họa</a>
 ### <a href="#-ung-dung"> 3. Ứng dụng</a>
-#### <a href="#-k-nearest-neighbor"> 3.1. Thuật toán _k_ - Nearest Neighbor</a> 
+#### <a href="#-k-nearest-neighbor"> 3.1. Thuật toán _k_ - Nearest Neighbor</a>
+#### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a> 
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -128,6 +129,30 @@ Hãy cùng đi vào một ứng dụng thực tế hơn. Giả sử ta có tập
 Có khá nhiều cách để thực hiện bài toán này, đối với những bài toán phân loại nhị phân (binary classification) mô hình hồi quy hậu cần  (một cách rất không hợp lý), logistic regressions thường xuyên được xử dụng. Tuy nhiên, đối với bài toán này một kĩ thuật khác sẽ được sử dụng, đó là _k_ - Nearest Neighbor, _k_-NN. Về thuật toán này tôi đã có một bài viết về nó nên sẽ không nhắc lại nhiều.
 
 Trong _k_-NN, một voter (người đăng ký trở thành cử tri) được xác định bằng cách xác định _k_ voters gần nhất với voter mục tiêu. Nếu các voters gần nhất thuộc Đảng Dân Chủ (dựa trên tôn giáo và tiền bạc) thì voter mục tiêu cũng thuộc Đảng Dân Chủ.
+
+Ví dụ với _k_ = 1, các voter trong tập dữ liệu huấn luyện sẽ có diện tích ảnh hưởng được khoanh vùng xung quanh các điểm xanh, đỏ (Hình 3). Voter mới sẽ được xác định rơi vào diện tích của chấm xanh hay đỏ mà từ đó suy ra kết quả dự đoán cho voter đó.
+
+<center><img src="/img/bias_variance/nns.PNG" alt="img" style="width: 607px;"/></center>
+<center><p>Hình 3: _k_-NN với _k_ = 1 cho tập dữ liệu huấn luyện.</p></center>
+
+Thực hiện huấn luyện mô hình với _k_ = 5. Sau khi huấn luyện, tiếp tục thực hiện dự đoán trên tập kiểm thử. Kết quả thu được như sau:
+
+<center><img src="/img/bias_variance/nns_prediction.PNG" alt="img" style="width: 610px;"/></center>
+<center><p>Hình 4: Huấn luyện mô hình với _k_ = 5.</p></center>
+
+Mỗi các nhân cũng có thể được xác định thuộc Đảng Dân Chủ hay Cộng Hòa bằng cách thể hiện qua đồ thị phân chia ranh giới đối với tập kiểm thử.
+
+<center><img src="/img/bias_variance/nns_k-5.PNG" alt="img" style="width: 609px;"/></center>
+<center><p>Hình 5: Phân chia ranh giới của kết quả dự đoán (Với _k_ = 5).</p></center>
+
+Đối với những cá nhân ở gần vùng ranh giới có màu nhạc hơn do mức độ chính xác thấp, ở những vị trí màu đậm cho mức độ chính xác cao hơn. Phía trên đường ranh giới là các cá nhân thuộc Đảng Cộng Hòa, phía dưới thuộc Đảng Dân Chủ.
+
+Nhân tố ảnh hưởng lớn nhất đến một mô hình sử dụng _k_-NN chính là việc lựa chọn số lượng _k_. Lựa chọn _k_ phù hợp sẽ tăng mức độ dự đoán chính xác cho mô hình.
+
+<a name="#-variance-va-bias">
+
+#### 3.2. Variance và Bias
+
 
 
 
