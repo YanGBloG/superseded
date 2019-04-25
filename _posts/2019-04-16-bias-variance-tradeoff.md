@@ -14,7 +14,8 @@ tags : [math]
 ### <a href="#-vi-du-minh-hoa"> 2. Ví dụ minh họa</a>
 ### <a href="#-ung-dung"> 3. Ứng dụng</a>
 #### <a href="#-k-nearest-neighbor"> 3.1. Thuật toán _k_ - Nearest Neighbor</a>
-#### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a> 
+#### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a>
+#### <a href="-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -153,7 +154,34 @@ Nhân tố ảnh hưởng lớn nhất đến một mô hình sử dụng _k_-NN
 
 #### 3.2. Variance và Bias
 
+Với ví dụ trên, khi tăng _k_ kết quả dự đoán nhận được có vẻ "mượt" hơn do lấy trung bình của nhiều voter hơn. Với _k_ = 1, đường biên giới không được mượt cho lắm, đồng thời có nhiều giá trị dự đoán sai nằm sâu bên trong vùng phân chia (được gọi là island). Với _k_ = 20, có thể thấy được đường biên giới mượt hơn hẳn và không còn trong thấy các "island" nữa (Hình 6, 7).
 
+<center><img src="/img/bias_variance/k-1.PNG" alt="img" style="width: 609px;"/></center>
+<center><p>Hình 6: Phân chia ranh giới của kết quả dự đoán (Với _k_ = 1).</p></center>
+
+<center><img src="/img/bias_variance/k-20.PNG" alt="img" style="width: 609px;"/></center>
+<center><p>Hình 7: Phân chia ranh giới của kết quả dự đoán (Với _k_ = 20).</p></center>
+
+Tuy nhiên, khi tăng _k_ quá lớn, tới giá trị _k_ = 80, ranh giới phân chia trở nên quá mượt, không thể phân biệt được cá nhân nào thuộc Đảng Cộng Hòa hay Dân Chủ và đường rang giới dự đoán không thể đem lại một kết quả chính xác được.
+
+<center><img src="/img/bias_variance/k-80.PNG" alt="img" style="width: 609px;"/></center>
+<center><p>Hình 8: Phân chia ranh giới của kết quả dự đoán (Với _k_ = 80).</p></center>
+
+Đường phân chia ranh giới không mượt hay xuất hiện các "island" chính là dấu hiệu của variance. Mặt khác, đường phân chia quá mượt chính là dấu hiệu của bias.
+
+Ta dễ dàng nhận thấy được khi tăng _k_ sẽ dẫn đến tăng bias và giảm variance. Trong khi giảm _k_ sẽ dẫn đến điều ngược lại. Nếu có thể, bạn đọc nên thực hiện trên nhiều tập dữ liệu khác nhau thể thấy được tính tự nhiên này của __Bias-Variance Tradeoff__.
+
+<a name="-phan-tich-bias-variance">
+
+#### 3.3. Phân tích bias và variance
+
+Trong thuật toán _k_-NN chúng ta có thể tính toán tổng sai số như sau:
+
+<div style="text-align:center" markdown="1">
+\\(Err(x) = \left(f(x)-\frac{1}{k}\sum\limits_{i=1}^k f(x_i)\right)^2+\frac{\sigma_\epsilon^2}{k} + \sigma_\epsilon^2\\)
+
+\\(Err(x) = \mathrm{Bias}^2 + \mathrm{Variance} + \mathrm{Irreducible\ Error}\\)
+</div>
 
 
 
