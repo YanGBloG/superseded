@@ -201,7 +201,7 @@ Một vài người thường cố gắng giảm tối đa bias và không quan 
 
 #### 4.2. Bagging và Resampling
 
-Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (__B__ootstrap __Agg_regat__ing__) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
+Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (<strong>B</strong>ootstrap <strong>Agg</strong>regat<strong>ing</strong>) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
 
 Một thuật toán tuyệt vời dựa trên Bagging chính là _Random Forest_. Random Forest hoạt động bằng cách huấn luyện các "cây quyết định" (decision trees) trên các tập dữ liệu bản sao của tập dữ liệu gốc. Bias của toàn bộ mô hình bằng bias của một cây quyết định (với variance cao), bằng cách tạo ra nhiều "cây" (rừng) và lấy trung bình variance của tất cả các cây, variance của mô hình cuối cùng sẽ giảm đáng kể so với một cây.
 
