@@ -15,7 +15,11 @@ tags : [math]
 ### <a href="#-ung-dung"> 3. Ứng dụng</a>
 #### <a href="#-k-nearest-neighbor"> 3.1. Thuật toán _k_ - Nearest Neighbor</a>
 #### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a>
-#### <a href="-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
+#### <a href="#-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
+### <a href="#-kiem-soat-bias-variance">4. Kiểm soát Bias và Variance</a>
+####<a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
+####<a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
+####<a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -182,6 +186,32 @@ Trong thuật toán _k_-NN chúng ta có thể tính toán tổng sai số như 
 
 \\(Err(x) = \mathrm{Bias}^2 + \mathrm{Variance} + \mathrm{Irreducible\ Error}\\)
 </div>
+
+<a name="-kiem-soat-bias-variance"></a>
+
+### 4. Kiểm soát Bias và Variance
+
+<a name="-fight-your-instincts"></a>
+
+#### 4.1. Không thực hiện theo bản năng
+
+Một vài người thường cố gắng giảm tối đa bias và không quan tâm đến variance. Điều này hoàn toàn sai về mặt logic mặc dù trong một vài trường hợp bias thấp, variance cao vẫn cho kết quả tốt. Tuy nhiên, trong hầu hết trường hợp phải giữ được sự cân bằng giữa bias và variance, việc giảm một trong hai thành phần dẫn đến tăng của thành phần còn lại thường làm giảm bớt độ tin cậy của mô hình.
+
+<a name="-bagging-va-resampling"></a>
+
+#### 4.2. Bagging và Resampling
+
+Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (__B__ootstrap __Agg_regat__ing__) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
+
+Một thuật toán tuyệt vời dựa trên Bagging chính là _Random Forest_. Random Forest hoạt động bằng cách huấn luyện các "cây quyết định" (decision trees) trên các tập dữ liệu bản sao của tập dữ liệu gốc. Bias của toàn bộ mô hình bằng bias của một cây quyết định (với variance cao), bằng cách tạo ra nhiều "cây" (rừng) và lấy trung bình variance của tất cả các cây, variance của mô hình cuối cùng sẽ giảm đáng kể so với một cây.
+
+<a name="-thuoc-tinh-cua-thuat-toan"></a>
+
+#### 4.3. Thuộc tính của thuật toán
+
+
+
+
 
 
 
