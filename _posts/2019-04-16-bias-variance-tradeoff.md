@@ -17,9 +17,9 @@ tags : [math]
 #### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a>
 #### <a href="#-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
 ### <a href="#-kiem-soat-bias-variance">4. Kiểm soát Bias và Variance</a>
-####<a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
-####<a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
-####<a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
+#### <a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
+#### <a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
+#### <a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
