@@ -17,9 +17,10 @@ tags : [math]
 #### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a>
 #### <a href="#-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
 ### <a href="#-kiem-soat-bias-variance">4. Kiểm soát Bias và Variance</a>
-#### <a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
-#### <a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
-#### <a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
+####<a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
+####<a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
+####<a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
+####<a href="#-under-over-fitting">4.4. Under-fitting và Over-fitting</a>
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -201,13 +202,36 @@ Một vài người thường cố gắng giảm tối đa bias và không quan 
 
 #### 4.2. Bagging và Resampling
 
-Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (<strong>B</strong>ootstrap <strong>Agg</strong>regat<strong>ing</strong>) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
+Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (__B__ootstrap __Agg_regat__ing__) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
 
 Một thuật toán tuyệt vời dựa trên Bagging chính là _Random Forest_. Random Forest hoạt động bằng cách huấn luyện các "cây quyết định" (decision trees) trên các tập dữ liệu bản sao của tập dữ liệu gốc. Bias của toàn bộ mô hình bằng bias của một cây quyết định (với variance cao), bằng cách tạo ra nhiều "cây" (rừng) và lấy trung bình variance của tất cả các cây, variance của mô hình cuối cùng sẽ giảm đáng kể so với một cây.
 
 <a name="-thuoc-tinh-cua-thuat-toan"></a>
 
-#### 4.3. Thuộc tính của thuật toán
+#### 4.3. Các thuộc tính tiệm cận của thuật toán
+
+Các thuộc tính tiệm cận của thuật toán (tính nhất quán, tính hiệu quả) thường được nhắc đến trong toán học thống kê. Cụ thể, nếu chúng ta có khả năng tăng vô hạn kích thước của tập huấn luyện, bias của mô hình sẽ giảm tiệm cận về 0 (tính nhất quán), phương sai của mô hình có khả năng tương đương với những mô hình tốt nhất (tính hiệu quả).
+
+Cả hai tính chất trên đều là những tính chất cần thiết cho một thuật toán xây dựng mô hình. Tuy nhiên, trong thực tế việc tăng vô hạn kích thước tập huấn luyện là điều không thể. Do đó, khi xây dựng một mô hình, tốt nhất chúng ta không nên quá tập trung vào các tính chất lý thuyết này, thay vào đó tập trung vào độ chính xác của mô hình sẽ mang lại hiệu quả tốt hơn.
+
+<a name="-under-over-fitting"></a>
+
+#### 4.4. Under-fitting và Over-fitting
+
+Về cơ bản, xử lý bias và variance cũng tương tự như xử lý over-fitting và under-fitting. Xu hướng tăng giảm bias và variance liên quan đến độ phức tạp của mô hình. Mô hình với càng nhiều tham số độ phức tạp càng lớn, lúc này variance trở thành vấn đề cần giải quyết trong khi bias giảm mạnh như hình dưới.
+
+<center><img src="/img/bias_variance/error.png" alt="img" style="width: 471px;"/></center>
+<center><p>Hình 9: Thay đổi của bias, variance so với độ phức tạp của mô hình.</p></center>
+
+Tại điểm mà mức độ phức tạp của mô hình khi tăng bias bằng với khi giảm variance tương ứng chính là điểm thích hợp nhất để sử dụng mô hình. Trong toán học điểm này được thể hiện như sau:
+
+<div style="text-align:center" markdown="1">
+\\(\frac{dBias}{dComplexity} = - \frac{dVariance}{dComplexity}\\)
+</div>
+
+Nếu như độ phức tạp mô hình lớn hơn vị trí này chứng tỏ mô hình đang có xu hướng over-fitting, ngược lại, độ phức tạp mô hình nhỏ hơn vị trí này mô hình đang có xu hướng under-fitting. Trong thực tế, không có một cách cụ thể nào để xác định được vị trí tối ưu này. Thay vào đó, chúng ta nên tính toán sai số dự đoán của mô hình trên các mức độ phức tạp khác nhau, sau đó chọn mô hình có mức độ phức tạp tương ứng với sai số tổng thể nhỏ nhất. Nên thực hiện kĩ thuật _Cross Validation_ để có thể đánh giá sai số một cách tốt nhất.
+
+_(Bài viết được dịch, sửa chữa theo [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) của tác giả Scott Fortmann-Roe, đồng thay thay đổi một số chỗ theo kiến thức của người dịch.)
 
 
 
