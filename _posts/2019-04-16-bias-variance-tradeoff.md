@@ -17,10 +17,10 @@ tags : [math]
 #### <a href="#-variance-va-bias"> 3.2. Variane và Bias</a>
 #### <a href="#-phan-tich-bias-variance"> 3.3. Phân tích bias và variance</a>
 ### <a href="#-kiem-soat-bias-variance">4. Kiểm soát Bias và Variance</a>
-####<a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
-####<a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
-####<a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
-####<a href="#-under-over-fitting">4.4. Under-fitting và Over-fitting</a>
+#### <a href="#-fight-your-instincts">4.1. Không thực hiện theo bản năng</a>
+#### <a href="#-bagging-va-resampling">4.2. Bagging và Resampling</a>
+#### <a href="#-thuoc-tinh-cua-thuat-toan">4.3. Thuộc tính của thuật toán</a>
+#### <a href="#-under-over-fitting">4.4. Under-fitting và Over-fitting</a>
 <!-- End TOC -->
 
 <a name="-gioi-thieu-ve-bias-variance"></a>
@@ -202,7 +202,7 @@ Một vài người thường cố gắng giảm tối đa bias và không quan 
 
 #### 4.2. Bagging và Resampling
 
-Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (__B__ootstrap __Agg_regat__ing__) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
+Bagging và Resampling thường được sử dụng để giảm variane của mô hình. Bagging (<strong>B</strong>ootstrap <strong>Agg</strong>regat<strong>ing</strong>) thường tạo ra nhiều bản sao của tập dữ liệu gốc bằng cách lựa chọn và thay thế ngẫu nhiên. Mỗi một bộ dữ liệu xây dựng nên một mô hình riêng biệt sau đó tập hợp các mô hình đó lại với nhau. Trung bình kết quả dự đoán của tất cả các dự đoán từ các mô hình sẽ được lấy làm kết quả cuối cùng.
 
 Một thuật toán tuyệt vời dựa trên Bagging chính là _Random Forest_. Random Forest hoạt động bằng cách huấn luyện các "cây quyết định" (decision trees) trên các tập dữ liệu bản sao của tập dữ liệu gốc. Bias của toàn bộ mô hình bằng bias của một cây quyết định (với variance cao), bằng cách tạo ra nhiều "cây" (rừng) và lấy trung bình variance của tất cả các cây, variance của mô hình cuối cùng sẽ giảm đáng kể so với một cây.
 
@@ -231,7 +231,7 @@ Tại điểm mà mức độ phức tạp của mô hình khi tăng bias bằng
 
 Nếu như độ phức tạp mô hình lớn hơn vị trí này chứng tỏ mô hình đang có xu hướng over-fitting, ngược lại, độ phức tạp mô hình nhỏ hơn vị trí này mô hình đang có xu hướng under-fitting. Trong thực tế, không có một cách cụ thể nào để xác định được vị trí tối ưu này. Thay vào đó, chúng ta nên tính toán sai số dự đoán của mô hình trên các mức độ phức tạp khác nhau, sau đó chọn mô hình có mức độ phức tạp tương ứng với sai số tổng thể nhỏ nhất. Nên thực hiện kĩ thuật _Cross Validation_ để có thể đánh giá sai số một cách tốt nhất.
 
-_(Bài viết được dịch, sửa chữa theo [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) của tác giả Scott Fortmann-Roe, đồng thay thay đổi một số chỗ theo kiến thức của người dịch.)
+_(Bài viết được dịch, sửa chữa theo [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) của tác giả Scott Fortmann-Roe, đồng thay thay đổi một số chỗ theo kiến thức của người dịch.)_
 
 
 
