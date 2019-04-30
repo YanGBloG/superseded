@@ -231,7 +231,7 @@ Tại điểm mà mức độ phức tạp của mô hình khi tăng bias bằng
 
 Nếu như độ phức tạp mô hình lớn hơn vị trí này chứng tỏ mô hình đang có xu hướng over-fitting, ngược lại, độ phức tạp mô hình nhỏ hơn vị trí này mô hình đang có xu hướng under-fitting. Trong thực tế, không có một cách cụ thể nào để xác định được vị trí tối ưu này. Thay vào đó, chúng ta nên tính toán sai số dự đoán của mô hình trên các mức độ phức tạp khác nhau, sau đó chọn mô hình có mức độ phức tạp tương ứng với sai số tổng thể nhỏ nhất. Nên thực hiện kĩ thuật _Cross Validation_ để có thể đánh giá sai số một cách tốt nhất.
 
-_(Bài viết được dịch, sửa chữa theo [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) của tác giả Scott Fortmann-Roe, đồng thay thay đổi một số chỗ theo kiến thức của người dịch.)_
+_(Bài viết được dịch, sửa chữa theo [Understanding Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) của tác giả Scott Fortmann-Roe, đồng thời thay đổi một số chỗ theo kiến thức của người dịch.)_
 
 
 
