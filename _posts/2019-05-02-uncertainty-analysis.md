@@ -8,9 +8,12 @@ tags : [petrophysic, data analysis]
 ### Nội dung bài viết
 <!-- TOC -->
 ### <a href="#-gioi-thieu-chung">1. Giới thiệu chung</a>
+### <a href="#-phan-tich-rui-ro-minh-giai-dia-vat-ly">2. Phân tích rủi ro trong minh giải địa vật lý</a>
 <!-- END TOC -->
 
 Trước khi đi vào series phân tích rủi ro của mô phỏng vỉa với well log và địa vật lý, tôi xin đi vào một số lý thuyết cơ bản trước.
+
+<a name="-gioi-thieu-chung"></a>
 
 ### 1. Giới thiệu chung
 
@@ -23,3 +26,11 @@ Phương pháp đo log đầu tiên được sử dụng là đo đường log �
 Thứ hai, các dụng cụ đo log không thể đo trực tiếp các tính chất địa vật lý cho mô phỏng vỉa hay đánh giá hàm lượng hydrocarbon (HC) trong vỉa. Ví dụ, hai tính chất quan trọng nhất để xác định lượng HC ban đầu trong vỉa là độ rỗng và độ bão hòa, hai tính chất này không thể đo được một cách trực tiếp mà phải thông các thuộc tính khác bằng cách sử dụng các mối quan hệ thực nghiệm.
 
 Hầu hết các tính chất địa vật lý sử dụng trong minh giải đều thu được qua một loạt các quá trình bao gồm thu thập dữ liệu (data acquisition, measuring), xử lý số liệu (processing), hiệu chỉnh (calibration) và minh giải (interpretation). Mỗi quá trình này luôn có một độ rủi ro nhất định ảnh hưởng đến kết quả cuối cùng đạt được. Hầu hết các đường logs đều bao gồm các hiệu chỉnh cơ bản về sai số hệ thống thông qua hiệu chỉnh dụng cụ đo và môi trường đo. Do tính chất thống kê của các phép đo và độ phức tạp của giếng khoan, một số rủi ro nhất định sẽ được giữ lại trong phép đo, đặc biệt là các phép đo không thể loại bỏ hoặc định lượng các sai số trong quá trình thực hiện phép đo.
+
+<a name="-phan-tich-rui-ro-minh-giai-dia-vat-ly"></a>
+
+### 2. Phân tích rủi ro trong minh giải địa vật lý
+
+Khi thực hiện đo logs các công cụ (tools) khác nhau hoặc giống nhau nhưng khác thế hệ sản xuất cần phải được hiệu chỉnh về cùng một tiêu chuẩn để có thể thống nhất số liệu đầu ra. Ví dụ như các tools đo độ rỗng hay điện trở suất cần phải hiệu chỉnh về điều kiện thành hệ hoặc điều kiện môi trường tùy theo nhà sản xuất, loại tool, thế hệ tool. Quá trình tìm kiếm các thông tin cho việc hiệu chỉnh thường tiêu tốn nhiều thời gian. Đối với các nhà phân tích, không có hiệu chỉnh phổ biến nhất, kể cả khi có cũng rất khó để xác định hiệu chỉnh đó có được sử dụng một cách đúng đắn hay không. Tuy nhiên, các hiệu chỉnh thực sự rất cần thiết, nếu như không thực hiện hoặc thực hiện không đúng cách thường dễ dẫn đến các sai số nghiêm trọng.
+
+
