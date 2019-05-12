@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phân tích rủi ro với Well-log và minh giải địa vật lý.
+title: Phân tích rủi ro với Well-log và minh giải địa vật lý
 mathjax: true
 tags : [petrophysic, data analysis]
 ---
@@ -32,5 +32,7 @@ Hầu hết các tính chất địa vật lý sử dụng trong minh giải đ�
 ### 2. Phân tích rủi ro trong minh giải địa vật lý
 
 Khi thực hiện đo logs các công cụ (tools) khác nhau hoặc giống nhau nhưng khác thế hệ sản xuất cần phải được hiệu chỉnh về cùng một tiêu chuẩn để có thể thống nhất số liệu đầu ra. Ví dụ như các tools đo độ rỗng hay điện trở suất cần phải hiệu chỉnh về điều kiện thành hệ hoặc điều kiện môi trường tùy theo nhà sản xuất, loại tool, thế hệ tool. Quá trình tìm kiếm các thông tin cho việc hiệu chỉnh thường tiêu tốn nhiều thời gian. Đối với các nhà phân tích, không có hiệu chỉnh phổ biến nhất, kể cả khi có cũng rất khó để xác định hiệu chỉnh đó có được sử dụng một cách đúng đắn hay không. Tuy nhiên, các hiệu chỉnh thực sự rất cần thiết, nếu như không thực hiện hoặc thực hiện không đúng cách thường dễ dẫn đến các sai số nghiêm trọng.
+
+Trong quá trình minh giải nếu như đã có những dữ liệu khác như mẫu lõi, áp suất và thử dòng (flow tests) cần phải hiệu chỉnh và kết hợp dữ liệu đo log với các dữ liệu có sẵn đó. Đối với những giếng được đo log bằng các tools tốt, có thể dữ liệu log sẽ không giống với dữ liệu từ mẫu lõi hay các dữ liệu khác. Nếu như chỉ có dũ liệu cho một hoặc hai giếng, những nhà phân tích phải đưa ra quyết định dữ liệu đó có đại diện cho toàn vỉa hay chỉ cho một phần nhỏ của vỉa. Dữ liệu địa vật lý có thể có sự thay đổi lớn trong một vỉa, điều này dẫn tói rủi ro cho quá trình minh giải địa vật lý.
 
 
