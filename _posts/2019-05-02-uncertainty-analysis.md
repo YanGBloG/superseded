@@ -9,6 +9,7 @@ tags : [petrophysic, data analysis]
 <!-- TOC -->
 ### <a href="#-gioi-thieu-chung">1. Giới thiệu chung</a>
 ### <a href="#-phan-tich-rui-ro-minh-giai-dia-vat-ly">2. Phân tích rủi ro trong minh giải địa vật lý</a>
+#### <a href="#-interpreting-and-deriving">2.1. Phân tích rủi ro trong minh giải độ rỗng</a>
 <!-- END TOC -->
 
 Trước khi đi vào series phân tích rủi ro của mô phỏng vỉa với well log và địa vật lý, tôi xin đi vào một số lý thuyết cơ bản trước.
@@ -35,4 +36,15 @@ Khi thực hiện đo logs các công cụ (tools) khác nhau hoặc giống nha
 
 Trong quá trình minh giải nếu như đã có những dữ liệu khác như mẫu lõi, áp suất và thử dòng (flow tests) cần phải hiệu chỉnh và kết hợp dữ liệu đo log với các dữ liệu có sẵn đó. Đối với những giếng được đo log bằng các tools tốt, có thể dữ liệu log sẽ không giống với dữ liệu từ mẫu lõi hay các dữ liệu khác. Nếu như chỉ có dũ liệu cho một hoặc hai giếng, những nhà phân tích phải đưa ra quyết định dữ liệu đó có đại diện cho toàn vỉa hay chỉ cho một phần nhỏ của vỉa. Dữ liệu địa vật lý có thể có sự thay đổi lớn trong một vỉa, điều này dẫn tói rủi ro cho quá trình minh giải địa vật lý.
 
+<a name="-interpreting-and-deriving"></a>
 
+#### 2.1. Phân tích rủi ro trong minh giải độ rỗng
+
+Độ rỗng có thể đo được bằng một vài đường logs khác nhau như sonic, neutron, density hoặc cũng có thể kết hợp các đường lại với nhau và so sánh với đồ thị phân tích mẫu lõi (core test).
+
+<center><img src="/img/uncertainty-analysis/porosity_cross_plot.PNG" alt="img" style="width: 1000px;"/></center>
+<center><p>Hình 1: Đồ thị phân tích thời gian truyền sóng với các mẫu lõi cso độ rỗng khác nhau, với đường hồi quy tương quan (màu đen) đường trung bình thời gian truyền sóng (màu đỏ). Hệ số tương quan vào khoảng 0.75</p></center>
+
+Để có thể thực hiện được công việc với độ chính xác cao nhất, các nhà minh giải cần phải hiểu được các tính chất của khung đá trong vỉa và lưu chất vỉa, đặc biệt là các tham số của lưu chất vỉa do tính chất của lưu chất vỉa thường thay đổi theo vòng đời của vỉa (do suy giảm áp suất vỉa). Phương pháp thực hiện cho mỗi giếng có thể khác nhau phụ thuộc vào dữ liệu hiện có của giếng đó. 
+
+Rủi ro trong quá trình thu thập và xử lý dữ liệu đồng thời làm cho việc minh giải khó khăn hơn. Mỗi lần tinh chỉnh dữ liệu đều có thể khiến cho quá trình minh giải lệch theo một hướng khác, mỗi mô hình độ rỗng được sử dụng đều phải xét đến các yếu tố lựa chọn tham số và sự thay đổi của tham số theo thời gian. Vì vậy, kết quả minh giải phụ thuộc rất nhiều vào người minh giải.
