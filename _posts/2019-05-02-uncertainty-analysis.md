@@ -42,7 +42,7 @@ Trong quá trình minh giải nếu như đã có những dữ liệu khác như
 
 Độ rỗng có thể đo được bằng một vài đường logs khác nhau như sonic, neutron, density hoặc cũng có thể kết hợp các đường lại với nhau và so sánh với đồ thị phân tích mẫu lõi (core test).
 
-<center><img src="/img/uncertainty-analysis/porosity-cross-plot.png" alt="img" style="width: 1000px;"/></center>
+<center><img src="/img/uncertainty-analysis/porosity-cross-plot.png" alt="img" style="width: 500px;"/></center>
 <center><p>Hình 1: Đồ thị phân tích thời gian truyền sóng với các mẫu lõi cso độ rỗng khác nhau, với đường hồi quy tương quan (màu đen) đường trung bình thời gian truyền sóng (màu đỏ). Hệ số tương quan vào khoảng 0.75</p></center>
 
 Để có thể thực hiện được công việc với độ chính xác cao nhất, các nhà minh giải cần phải hiểu được các tính chất của khung đá trong vỉa và lưu chất vỉa, đặc biệt là các tham số của lưu chất vỉa do tính chất của lưu chất vỉa thường thay đổi theo vòng đời của vỉa (do suy giảm áp suất vỉa). Phương pháp thực hiện cho mỗi giếng có thể khác nhau phụ thuộc vào dữ liệu hiện có của giếng đó. 
