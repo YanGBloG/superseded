@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 37 lý do mạng neuron nhân tạo không hoạt động
+title: Một vài lý do khiến mạng neural nhân tạo không hoạt động
 tags : [machine learning]
 ---
 
