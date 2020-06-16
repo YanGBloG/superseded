@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kết quả tệ và các cấn đề liên quan
+title: Kết quả tệ và các vấn đề liên quan
 tags : [machine learning]
 ---
 
