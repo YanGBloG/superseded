@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Một vài lý do khiến mạng neural nhân tạo không hoạt động
+title: Kết quả tệ và các cấn đề liên quan
 tags : [machine learning]
 ---
 
@@ -20,7 +20,7 @@ tags : [machine learning]
 
 Bài viết này được dịch từ một bài trên medium.
 
-Sau khi bạn huấn luyện một mô hình trong một thời gian dài, đồ thị thể hiện mất mát trên cả tập huấn luyện và tập thử trông rất tuyệt vời, 
+Sau khi bạn huấn luyện một mô hình trong một thời gian dài, đồ thị thể hiện hàm mất mát (loss function) trên cả tập huấn luyện và tập thử trông rất tuyệt vời, 
 nhưng khi tiến hành dự đoán lại đưa ra một kết quả xấu, có thể kết quả phân loại hoàn toàn trả về không, hoặc tồi tệ hơn nữa là 
 chẳng có gì được trả về. Bạn tự hỏi điều gì đang xảy ra vậy ? Thực sự có rất nhiều lý do cho vấn đề này.
 
